@@ -1,0 +1,107 @@
+{
+  "userInterface": false,
+  "terminal": true,
+  "colors": [
+    {
+      "name": "Foreground",
+      "color": "#C5C5D2",
+      "terminalMapping": "foreground"
+    },
+    {
+      "name": "Background",
+      "color": "#10101B",
+      "terminalMapping": "background"
+    },
+    {
+      "name": "Cursor Background",
+      "color": "#C5C5D2",
+      "terminalMapping": "cursorBackground"
+    },
+    {
+      "name": "Cursor Foreground",
+      "color": "#10101B",
+      "terminalMapping": "cursorForeground"
+    },
+    {
+      "name": "Black",
+      "color": "#1A1A29",
+      "terminalMapping": "ansiBlack"
+    },
+    {
+      "name": "Red",
+      "color": "#232334",
+      "terminalMapping": "ansiRed"
+    },
+    {
+      "name": "Green",
+      "color": "#33334A",
+      "terminalMapping": "ansiGreen"
+    },
+    {
+      "name": "Yellow",
+      "color": "#4A4969",
+      "terminalMapping": "ansiYellow"
+    },
+    {
+      "name": "Blue",
+      "color": "#676785",
+      "terminalMapping": "ansiBlue"
+    },
+    {
+      "name": "Magenta",
+      "color": "#8A8AA3",
+      "terminalMapping": "ansiMagenta"
+    },
+    {
+      "name": "Cyan",
+      "color": "#B3B3C4",
+      "terminalMapping": "ansiCyan"
+    },
+    {
+      "name": "White",
+      "color": "#E2E2E8",
+      "terminalMapping": "ansiWhite"
+    },
+    {
+      "name": "Bright Black",
+      "color": "#5EB5C1",
+      "terminalMapping": "ansiBrightBlack"
+    },
+    {
+      "name": "Bright Red",
+      "color": "#D893C2",
+      "terminalMapping": "ansiBrightRed"
+    },
+    {
+      "name": "Bright Green",
+      "color": "#82C4A0",
+      "terminalMapping": "ansiBrightGreen"
+    },
+    {
+      "name": "Bright Yellow",
+      "color": "#D98AC0",
+      "terminalMapping": "ansiBrightYellow"
+    },
+    {
+      "name": "Bright Blue",
+      "color": "#F28E6A",
+      "terminalMapping": "ansiBrightBlue"
+    },
+    {
+      "name": "Bright Magenta",
+      "color": "#B4B3F0",
+      "terminalMapping": "ansiBrightMagenta"
+    },
+    {
+      "name": "Bright Cyan",
+      "color": "#EA8DCC",
+      "terminalMapping": "ansiBrightCyan"
+    },
+    {
+      "name": "Bright White",
+      "color": "#F088D0",
+      "terminalMapping": "ansiBrightWhite"
+    }
+  ],
+  "paletteName": "miami"
+}
