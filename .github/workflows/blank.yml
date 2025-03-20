@@ -17,5 +17,5 @@ jobs:
           git_email: 'CHRIS@example.com'
           skip_ci: 'yes'
           commit_message: 'CHRIS My custom commit message'
-          output_folder: 'output'
+          output_folder: 'outpuddt'
           input_folder: 'templates'
