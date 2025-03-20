@@ -5,7 +5,7 @@ on:
 
 jobs:
   generate-templates:
-    runs-on: ubuntu-latest
+    runs-on: docker
     permissions:
       contents: write  # Needed for pushing changes
     
