@@ -1,10 +1,8 @@
-name: Example Workflow
-
+name: CCCCExample Workflow
 on:
   push:
     branches:
-      - main
-
+      - master
 jobs:
   run-meowmaker:
     runs-on: ubuntu-latest
