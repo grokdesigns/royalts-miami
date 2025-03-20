@@ -21,4 +21,3 @@
 2. Click on Palette > Manage > Import
 
 3. Import the royalts-miami.rtcp file from this repo and press OK.
-4. h
