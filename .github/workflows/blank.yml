@@ -1,22 +1,21 @@
-name: Generate Catppuccin Templates
-
 on:
   push:
-    branches:
-      - main  # You can change this to your default branch
+    branches: [main]
   workflow_dispatch:
 
 jobs:
   generate-templates:
     runs-on: ubuntu-latest
-    steps:       
+    permissions:
+      contents: write  # Needed for pushing changes
+    
+    steps:      
       - name: Meow Maker for Catppuccin
-        uses: grokdesigns/meow-maker@v1.0.0
-        env:
-          # Customize these environment variables as needed
-          GIT_USERNAME: 'github-actions[bot]'
-          GIT_EMAIL: 'github-actions[bot]@users.noreply.github.com'
-          SKIP_CI: 'yes'
-          COMMIT_MESSAGE: '🐱 - Generated via Meow Maker'
-          OUTPUT_FOLDER: 'output'
-          INPUT_FOLDER: 'templates'
+        uses: grokdesigns/meow-maker@v1.0.1  # Use your new version
+        with:
+          git_username: "github-actions[bot]"
+          git_email: "github-actions[bot]@users.noreply.github.com"
+          skip_ci: "yes"
+          input_folder: "templates"
+          output_folder: "output"
+          commit_message: "🐱 - Generated via Meow Maker"
