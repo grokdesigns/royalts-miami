@@ -17,6 +17,6 @@ jobs:
           git_email: 'github-actions[bot]@users.noreply.github.com'
           skip_ci: 'yes'
           commit_message: '🐱 - Generated via Meow Maker'
-          output_folder: 'output'
+          output_folder: 'outputtest'
           input_folder: 'templates'
           branch_name: ${{ github.ref }}  #Don't change.
