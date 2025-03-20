@@ -1,0 +1,2 @@
+- name: Meow Maker for Catppuccin
+  uses: grokdesigns/meow-maker@v1.0.0
