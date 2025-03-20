@@ -1,25 +1,22 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
+name: Generate Catppuccin Templates
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
+    branches:
+      - main  # You can change this to your default branch
   workflow_dispatch:
 
 jobs:
-  build:
+  generate-templates:
     runs-on: ubuntu-latest
-    env:  # Setting global environment variables for Git configuration
-      GIT_USERNAME: 'github-actions[bot]'  # Replace with your desired Git username
-      GIT_EMAIL: 'github-actions[bot]@users.noreply.github.com'  # Replace with your email address
-      SKIP_CI: 'yes'  # Set this to 'no' if you want to run CI on commits
-      COMMIT_MESSAGE: '🐱 - Generated via Meow Maker'
-      OUTPUT_FOLDER: '' #If you leave this blank, the root directory specified in your Tera file will be in the root of the repo.
-      INPUT_FOLDER: 'templates'
-    steps:
+    steps:       
       - name: Meow Maker for Catppuccin
         uses: grokdesigns/meow-maker@v1.0.0
+        env:
+          # Customize these environment variables as needed
+          GIT_USERNAME: 'github-actions[bot]'
+          GIT_EMAIL: 'github-actions[bot]@users.noreply.github.com'
+          SKIP_CI: 'yes'
+          COMMIT_MESSAGE: '🐱 - Generated via Meow Maker'
+          OUTPUT_FOLDER: 'output'
+          INPUT_FOLDER: 'templates'
