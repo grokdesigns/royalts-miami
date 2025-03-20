@@ -19,3 +19,4 @@ jobs:
           commit_message: 'CHRIS My custom commit message'
           output_folder: 'outpuddt'
           input_folder: 'templates'
+          branch_name: ${{ github.ref }}  #Don't change.
