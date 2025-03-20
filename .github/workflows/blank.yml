@@ -1,2 +1,18 @@
-- name: Meow Maker for Catppuccin
-  uses: grokdesigns/meow-maker@v1.0.0
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Meow Maker for Catppuccin
+        uses: grokdesigns/meow-maker@v1.0.0
