@@ -1,4 +1,4 @@
-name: CCCCExample Workflow
+name: Meow Maker Workflow
 on:
   push:
     branches:
