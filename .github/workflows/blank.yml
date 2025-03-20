@@ -10,8 +10,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run Meow Maker
-        uses: 'docker://grokdesigns/meow-maker:latest'
+      - name: Meow Maker for Catppuccin
+        uses: grokdesigns/meow-maker@v1.0.3
         with:
           git_username: 'github-actions[bot]'
           git_email: 'github-actions[bot]@users.noreply.github.com'
