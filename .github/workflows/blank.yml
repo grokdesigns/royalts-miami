@@ -1,21 +1,23 @@
+name: Example Workflow
+
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
-  generate-templates:
-    runs-on: docker
-    permissions:
-      contents: write  # Needed for pushing changes
-    
-    steps:      
-      - name: Meow Maker for Catppuccin
-        uses: grokdesigns/meow-maker@v1.0.1  # Use your new version
+  run-meowmaker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Meow Maker
+        uses: grokdesigns/meowmaker@main
         with:
-          git_username: "github-actions[bot]"
-          git_email: "github-actions[bot]@users.noreply.github.com"
-          skip_ci: "yes"
-          input_folder: "templates"
-          output_folder: "output"
-          commit_message: "🐱 - Generated via Meow Maker"
+          git_username: 'CHRIS'
+          git_email: 'CHRIS@example.com'
+          skip_ci: 'yes'
+          commit_message: 'CHRIS My custom commit message'
+          output_folder: 'output'
+          input_folder: 'templates'
